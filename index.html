@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+<style>
+    .app{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        border: solid black 1px;
+        box-shadow: 4px;
+        border-radius: 7px;
+        margin-left: 390px;
+        margin-top: 50px;
+        width: 700px;
+        /* align-items: center; */
+    }
+    .main1{
+        /* margin-top: 140px;
+        margin-left: 450px; */
+    }
+    .info{
+        display: none;
+    }
+    .info2{
+        display: block;
+    }
+    li{
+        list-style: none;
+    }
+
+</style>
+<body>
+    
+<div class="container-md app">
+    
+        <div class="row">
+            <div class="col-6">
+                <h1 style=" font-size: 80px;">Weather App</h1>
+            </div>
+        </div>
+    
+    <div class="row">
+        <div class="col-8">
+            <div class="mb-3 ">
+                <label for="exampleInputEmail1" class="form-label">Enter your Desired City</label>
+                <input type="text" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                <div id="emailHelp" class="form-text">Click on submit to see the Weather</div>
+            </div>
+        
+            <button  class=" check btn btn-primary">Check</button>
+        </div>
+    </div>
+    
+    <div class="row">
+        <div class="col-6">
+            <div class="info">
+                <h1 class="cityname">cityname</h1>
+                <ul>
+                    <li>Temprature: <span class="s0"></span></li>
+                    <li>max_temp: <span class="s1"></span></li>
+                    <li>min_temp: <span class="s2"></span></li>
+                    <li>feels_like: <span class="s3"></span></li>
+                    <li>humidity: <span class="s4"></span></li>
+                    <li>wind_speed: <span class="s5"></span></li>
+                    <li>wind_degrees: <span class="s6"></span></li>
+                    <li>sunrise<span class="s7"></span></li>
+                    <li>sunset<span class="s8"></span></li>
+                    <li>cloud_pct: <span class="s9"></span></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+            <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+
+        <script src="script.js"></script>
+</body>
+</html>
